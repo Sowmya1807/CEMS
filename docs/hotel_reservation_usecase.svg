@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="700" viewBox="0 0 1100 700">
+  <style>
+    .actor { font: 14px sans-serif; text-anchor: middle; }
+    .actor-figure { stroke: #222; stroke-width:2; fill:none; }
+    .usecase { fill: #fff8dc; stroke: #8b4513; stroke-width:2; }
+    .uc-text { font: 13px sans-serif; text-anchor: middle; fill:#333; }
+    .link { stroke: #555; stroke-width:1.8; fill:none; }
+    .title { font: 18px sans-serif; font-weight:600; fill:#111; text-anchor:middle; }
+    .note { font: 12px sans-serif; fill:#444; }
+  </style>
+
+  <!-- Title -->
+  <text x="550" y="30" class="title">Hotel Reservation System - Use Case Diagram</text>
+
+  <!-- Actors (left column) -->
+  <!-- Guest -->
+  <g transform="translate(90,90)">
+    <g class="actor-figure">
+      <circle cx="0" cy="0" r="18" />
+      <line x1="0" y1="18" x2="0" y2="60" />
+      <line x1="0" y1="30" x2="-20" y2="50" />
+      <line x1="0" y1="30" x2="20" y2="50" />
+      <line x1="0" y1="60" x2="-18" y2="90" />
+      <line x1="0" y1="60" x2="18" y2="90" />
+    </g>
+    <text x="0" y="120" class="actor">Guest / Customer</text>
+  </g>
+
+  <!-- Receptionist -->
+  <g transform="translate(90,240)">
+    <g class="actor-figure">
+      <circle cx="0" cy="0" r="18" />
+      <line x1="0" y1="18" x2="0" y2="60" />
+      <line x1="0" y1="30" x2="-20" y2="50" />
+      <line x1="0" y1="30" x2="20" y2="50" />
+      <line x1="0" y1="60" x2="-18" y2="90" />
+      <line x1="0" y1="60" x2="18" y2="90" />
+    </g>
+    <text x="0" y="120" class="actor">Receptionist</text>
+  </g>
+
+  <!-- Administrator -->
+  <g transform="translate(90,390)">
+    <g class="actor-figure">
+      <circle cx="0" cy="0" r="18" />
+      <line x1="0" y1="18" x2="0" y2="60" />
+      <line x1="0" y1="30" x2="-20" y2="50" />
+      <line x1="0" y1="30" x2="20" y2="50" />
+      <line x1="0" y1="60" x2="-18" y2="90" />
+      <line x1="0" y1="60" x2="18" y2="90" />
+    </g>
+    <text x="0" y="120" class="actor">Administrator</text>
+  </g>
+
+  <!-- Housekeeping -->
+  <g transform="translate(90,540)">
+    <g class="actor-figure">
+      <circle cx="0" cy="0" r="18" />
+      <line x1="0" y1="18" x2="0" y2="60" />
+      <line x1="0" y1="30" x2="-20" y2="50" />
+      <line x1="0" y1="30" x2="20" y2="50" />
+      <line x1="0" y1="60" x2="-18" y2="90" />
+      <line x1="0" y1="60" x2="18" y2="90" />
+    </g>
+    <text x="0" y="120" class="actor">Housekeeping</text>
+  </g>
+
+  <!-- Use Cases (center) -->
+  <g transform="translate(420,80)">
+    <ellipse class="usecase" cx="300" cy="10" rx="150" ry="30" />
+    <text class="uc-text" x="300" y="14">Register / Login</text>
+
+    <ellipse class="usecase" cx="300" cy="80" rx="150" ry="30" />
+    <text class="uc-text" x="300" y="84">Search Rooms / Check Availability</text>
+
+    <ellipse class="usecase" cx="300" cy="150" rx="150" ry="30" />
+    <text class="uc-text" x="300" y="154">View Room Details</text>
+
+    <ellipse class="usecase" cx="300" cy="230" rx="170" ry="30" />
+    <text class="uc-text" x="300" y="234">Make Reservation (Book)</text>
+
+    <ellipse class="usecase" cx="300" cy="300" rx="150" ry="30" />
+    <text class="uc-text" x="300" y="304">Modify Booking</text>
+
+    <ellipse class="usecase" cx="300" cy="370" rx="150" ry="30" />
+    <text class="uc-text" x="300" y="374">Cancel Booking</text>
+
+    <ellipse class="usecase" cx="300" cy="440" rx="150" ry="30" />
+    <text class="uc-text" x="300" y="444">Make Payment / Receive Confirmation</text>
+
+    <ellipse class="usecase" cx="300" cy="520" rx="150" ry="30" />
+    <text class="uc-text" x="300" y="524">Check-in / Check-out</text>
+  </g>
+
+  <!-- Admin use cases (right side) -->
+  <g transform="translate(820,90)">
+    <ellipse class="usecase" cx="0" cy="10" rx="140" ry="28" />
+    <text class="uc-text" x="0" y="14">Manage Rooms</text>
+
+    <ellipse class="usecase" cx="0" cy="70" rx="140" ry="28" />
+    <text class="uc-text" x="0" y="74">Manage Rates & Promotions</text>
+
+    <ellipse class="usecase" cx="0" cy="130" rx="140" ry="28" />
+    <text class="uc-text" x="0" y="134">Manage Bookings</text>
+
+    <ellipse class="usecase" cx="0" cy="190" rx="140" ry="28" />
+    <text class="uc-text" x="0" y="194">Generate Reports</text>
+
+    <ellipse class="usecase" cx="0" cy="270" rx="140" ry="28" />
+    <text class="uc-text" x="0" y="274">Update Room Status</text>
+  </g>
+
+  <!-- Payment Gateway actor (right) -->
+  <g transform="translate(1020,420)">
+    <rect x="-60" y="-20" width="120" height="40" rx="6" ry="6" fill="#eef6ff" stroke="#2b6cb0" stroke-width="2"/>
+    <text x="0" y="6" class="actor">Payment Gateway</text>
+  </g>
+
+  <!-- Connections from Actors to Use Cases -->
+  <!-- Guest connections -->
+  <path class="link" d="M140 110 L260 110" />
+  <path class="link" d="M140 180 L260 180" />
+  <path class="link" d="M140 250 L260 250" />
+  <path class="link" d="M140 320 L260 320" />
+  <path class="link" d="M140 390 L260 390" />
+
+  <!-- Receptionist connections -->
+  <path class="link" d="M140 260 L260 260" stroke-dasharray="4 3" />
+  <path class="link" d="M140 330 L260 330" stroke-dasharray="4 3" />
+  <path class="link" d="M140 300 L260 300" stroke-dasharray="4 3" />
+
+  <!-- Administrator connections -->
+  <path class="link" d="M140 420 L420 430" />
+  <path class="link" d="M140 500 L420 510" />
+
+  <!-- Housekeeping connection -->
+  <path class="link" d="M140 560 L780 350" />
+
+  <!-- Receptionist check-in/out -->
+  <path class="link" d="M140 300 L420 550" />
+
+  <!-- Connections from Make Reservation to Payment & Confirmation -->
+  <path class="link" d="M470 260 L820 260" />
+  <path class="link" d="M470 340 L1020 420" />
+
+  <!-- Check-out payment -->
+  <path class="link" d="M470 540 L1020 420" stroke-dasharray="2 2"/>
+
+  <!-- Admin area links (Manage Bookings to central booking) -->
+  <path class="link" d="M680 230 L740 130" />
+
+  <!-- Legend note -->
+  <text x="40" y="680" class="note">Solid lines: primary interactions. Dashed lines: assisted or alternate flows.</text>
+</svg>
